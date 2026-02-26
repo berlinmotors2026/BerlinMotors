@@ -122,14 +122,6 @@ export default function ContactSection() {
                 CABA, Argentina
               </p>
             </div>
-            <div>
-              <h3 className="text-white font-semibold mb-2">Horario</h3>
-              <div className="text-gray-400 text-sm space-y-1">
-                <p>Lunes – Viernes: 9:00 AM – 7:00 PM</p>
-                <p>Sábado: 10:00 AM – 5:00 PM</p>
-                <p>Domingo: Cerrado</p>
-              </div>
-            </div>
           </div>
         </div>
       </div>
