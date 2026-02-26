@@ -12,11 +12,11 @@ export default function HeroSection() {
           Ventas &bull; Consignación &bull; Calidad
         </p>
         <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-white leading-tight mb-6">
-          Encuentra Tu Próximo{" "}
+          Encontrá Tu Próximo{" "}
           <span className="text-brand">Auto</span>
         </h1>
         <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10">
-          Vehículos premium seminuevos y servicios de consignación sin
+          Vehiculos seminuevos y servicios de consignación sin
           complicaciones. Tu socio de confianza en la compra y venta de autos.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -32,13 +32,6 @@ export default function HeroSection() {
           >
             Vende Tu Auto
           </a>
-        </div>
-
-        {/* Scroll indicator */}
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
-          <svg className="w-6 h-6 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-          </svg>
         </div>
       </div>
     </section>

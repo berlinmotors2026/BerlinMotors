@@ -1,27 +1,27 @@
 const steps = [
   {
     number: "01",
-    title: "Evaluación Gratuita",
+    title: "Publicamos Tu Auto",
     description:
-      "Trae tu vehículo para una tasación sin compromiso. Evaluaremos su condición y valor de mercado para establecer el precio correcto.",
+      "Nos encargamos de fotos, descripción y publicación en los principales portales. Tu auto listo para venderse sin que pierdas tiempo.",
   },
   {
     number: "02",
-    title: "Marketing Profesional",
+    title: "Filtramos Compradores Reales",
     description:
-      "Fotografiamos, detallamos y publicamos tu vehículo en múltiples plataformas para alcanzar la mayor cantidad de compradores.",
+      "Solo te presentamos interesados verificados. Nada de curiosos ni pérdidas de tiempo.",
   },
   {
     number: "03",
-    title: "Venta Sin Complicaciones",
+    title: "Negociamos Por Vos",
     description:
-      "Nos encargamos de las consultas, pruebas de manejo, negociaciones y papeleo. Tú descansas mientras vendemos tu auto.",
+      "Respondemos consultas, coordinamos visitas y negociamos para que obtengas el mejor precio posible.",
   },
   {
     number: "04",
-    title: "Recibe Tu Pago",
+    title: "Cobrás Rápido y Seguro",
     description:
-      "Una vez vendido, recibes tu pago rápidamente. Precios transparentes sin cargos ocultos — solo una comisión competitiva.",
+      "Gestionamos la operación completa hasta que el dinero esté en tu cuenta. Sin vueltas. Sin riesgos.",
   },
 ];
 
