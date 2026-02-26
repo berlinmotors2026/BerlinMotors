@@ -67,7 +67,9 @@ export default function CarCard({ car }: { car: Car }) {
             {formatPrice(car.price)}
           </span>
           <a
-            href="#contact"
+            href={`https://wa.me/5491126160829?text=${encodeURIComponent(`Hola, me interesa el ${car.year} ${car.make} ${car.model}${car.trim ? ` ${car.trim}` : ""} que vi en Berlin Prestige. ¿Podrían darme más información?`)}`}
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-sm text-gray-400 hover:text-brand transition-colors"
           >
             Consultar &rarr;
