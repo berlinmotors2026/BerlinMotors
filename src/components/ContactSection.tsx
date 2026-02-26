@@ -4,10 +4,34 @@ import { useState, FormEvent } from "react";
 
 export default function ContactSection() {
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState(false);
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setSubmitted(true);
+    setSending(true);
+    setError(false);
+
+    const formData = new FormData(e.currentTarget);
+    formData.append("access_key", "d1d01950-df48-4a98-9f35-055bf2cbeebc");
+    formData.append("from_name", "Berlin Prestige Web");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+      } else {
+        setError(true);
+      }
+    } catch {
+      setError(true);
+    } finally {
+      setSending(false);
+    }
   }
 
   return (
@@ -46,15 +70,18 @@ export default function ContactSection() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-5">
+                <input type="hidden" name="subject" value="Nuevo mensaje desde Berlin Prestige Web" />
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <input
                     type="text"
+                    name="name"
                     placeholder="Nombre"
                     required
                     className="w-full bg-dark-700 border border-dark-600 text-white rounded px-4 py-3 placeholder-gray-500 focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand transition-colors"
                   />
                   <input
                     type="email"
+                    name="email"
                     placeholder="Correo electrónico"
                     required
                     className="w-full bg-dark-700 border border-dark-600 text-white rounded px-4 py-3 placeholder-gray-500 focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand transition-colors"
@@ -63,10 +90,12 @@ export default function ContactSection() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <input
                     type="tel"
+                    name="phone"
                     placeholder="Teléfono (opcional)"
                     className="w-full bg-dark-700 border border-dark-600 text-white rounded px-4 py-3 placeholder-gray-500 focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand transition-colors"
                   />
                   <select
+                    name="topic"
                     defaultValue=""
                     className="w-full bg-dark-700 border border-dark-600 text-white rounded px-4 py-3 focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand transition-colors"
                   >
@@ -80,16 +109,23 @@ export default function ContactSection() {
                   </select>
                 </div>
                 <textarea
+                  name="message"
                   placeholder="Tu mensaje..."
                   rows={5}
                   required
                   className="w-full bg-dark-700 border border-dark-600 text-white rounded px-4 py-3 placeholder-gray-500 focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand transition-colors resize-none"
                 />
+                {error && (
+                  <p className="text-red-400 text-sm">
+                    Hubo un error al enviar el mensaje. Por favor, intentá de nuevo.
+                  </p>
+                )}
                 <button
                   type="submit"
-                  className="w-full bg-brand hover:bg-brand-light text-dark-900 font-semibold py-3.5 rounded transition-colors"
+                  disabled={sending}
+                  className="w-full bg-brand hover:bg-brand-light text-dark-900 font-semibold py-3.5 rounded transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  Enviar Mensaje
+                  {sending ? "Enviando..." : "Enviar Mensaje"}
                 </button>
               </form>
             )}
