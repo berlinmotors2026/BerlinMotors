@@ -110,10 +110,10 @@ export default function ContactSection() {
             <div>
               <h3 className="text-white font-semibold mb-2">Email</h3>
               <a
-                href="mailto:info@berlinmotors.com"
+                href="mailto:info@berlinprestige.com"
                 className="text-gray-400 hover:text-brand transition-colors"
               >
-                info@berlinmotors.com
+                info@berlinprestige.com
               </a>
             </div>
             <div>

@@ -43,7 +43,7 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4">Contact</h4>
             <div className="text-gray-500 text-sm space-y-2">
               <p>(555) 123-4567</p>
-              <p>info@berlinmotors.com</p>
+              <p>info@berlinprestige.com</p>
               <p>123 Auto Drive, Your City, ST 12345</p>
             </div>
           </div>
