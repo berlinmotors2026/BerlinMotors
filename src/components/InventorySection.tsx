@@ -10,12 +10,12 @@ export default function InventorySection() {
         {/* Section heading */}
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Our Inventory
+            Nuestro Inventario
           </h2>
           <div className="w-16 h-1 bg-brand mx-auto mb-4" />
           <p className="text-gray-400 max-w-xl mx-auto">
-            Explore our hand-picked selection of quality vehicles. Each car is
-            inspected and ready for its next owner.
+            Explora nuestra selección de vehículos de calidad. Cada auto es
+            inspeccionado y está listo para su próximo dueño.
           </p>
         </div>
 

@@ -29,12 +29,12 @@ export default function CarCard({ car }: { car: Car }) {
         <div className="absolute top-3 right-3 flex gap-2">
           {car.status === "Pending" && (
             <span className="bg-yellow-500/90 text-dark-900 text-xs font-bold px-2.5 py-1 rounded">
-              Pending
+              Pendiente
             </span>
           )}
           {car.consignment && (
             <span className="bg-brand/90 text-dark-900 text-xs font-bold px-2.5 py-1 rounded">
-              Consignment
+              Consignación
             </span>
           )}
         </div>
@@ -70,7 +70,7 @@ export default function CarCard({ car }: { car: Car }) {
             href="#contact"
             className="text-sm text-gray-400 hover:text-brand transition-colors"
           >
-            Inquire &rarr;
+            Consultar &rarr;
           </a>
         </div>
       </div>

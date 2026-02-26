@@ -1,8 +1,8 @@
 const quickLinks = [
-  { label: "Home", href: "#home" },
-  { label: "Inventory", href: "#inventory" },
-  { label: "Consignment", href: "#consignment" },
-  { label: "Contact", href: "#contact" },
+  { label: "Inicio", href: "#home" },
+  { label: "Inventario", href: "#inventory" },
+  { label: "Consignación", href: "#consignment" },
+  { label: "Contacto", href: "#contact" },
 ];
 
 export default function Footer() {
@@ -13,17 +13,17 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <span className="text-xl font-bold text-white tracking-wider">
-              BERLIN <span className="text-brand">MOTORS</span>
+              BERLIN <span className="text-brand">PRESTIGE</span>
             </span>
             <p className="text-gray-500 text-sm mt-3 max-w-xs">
-              Your trusted partner for quality pre-owned vehicles and
-              hassle-free car consignment services.
+              Tu socio de confianza para vehículos seminuevos de calidad y
+              servicios de consignación sin complicaciones.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-white font-semibold mb-4">Quick Links</h4>
+            <h4 className="text-white font-semibold mb-4">Enlaces Rápidos</h4>
             <ul className="space-y-2">
               {quickLinks.map((link) => (
                 <li key={link.href}>
@@ -40,7 +40,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="text-white font-semibold mb-4">Contact</h4>
+            <h4 className="text-white font-semibold mb-4">Contacto</h4>
             <div className="text-gray-500 text-sm space-y-2">
               <p>(555) 123-4567</p>
               <p>info@berlinprestige.com</p>
@@ -50,8 +50,8 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-dark-700 mt-10 pt-6 text-center text-gray-600 text-sm">
-          &copy; {new Date().getFullYear()} Berlin Motors. All rights
-          reserved.
+          &copy; {new Date().getFullYear()} Berlin Prestige. Todos los derechos
+          reservados.
         </div>
       </div>
     </footer>

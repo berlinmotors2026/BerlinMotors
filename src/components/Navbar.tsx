@@ -3,10 +3,10 @@
 import { useState, useEffect } from "react";
 
 const navLinks = [
-  { label: "Home", href: "#home" },
-  { label: "Inventory", href: "#inventory" },
-  { label: "Consignment", href: "#consignment" },
-  { label: "Contact", href: "#contact" },
+  { label: "Inicio", href: "#home" },
+  { label: "Inventario", href: "#inventory" },
+  { label: "Consignación", href: "#consignment" },
+  { label: "Contacto", href: "#contact" },
 ];
 
 export default function Navbar() {
@@ -30,7 +30,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <a href="#home" className="text-xl font-bold text-white tracking-wider">
-            BERLIN <span className="text-brand">MOTORS</span>
+            BERLIN <span className="text-brand">PRESTIGE</span>
           </a>
 
           {/* Desktop links */}
@@ -50,7 +50,7 @@ export default function Navbar() {
           <button
             className="md:hidden text-gray-300 hover:text-white"
             onClick={() => setIsMobileOpen(!isMobileOpen)}
-            aria-label="Toggle menu"
+            aria-label="Abrir menú"
           >
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               {isMobileOpen ? (

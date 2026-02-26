@@ -16,12 +16,12 @@ export default function ContactSection() {
         {/* Section heading */}
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Get In Touch
+            Contáctanos
           </h2>
           <div className="w-16 h-1 bg-brand mx-auto mb-4" />
           <p className="text-gray-400 max-w-xl mx-auto">
-            Have a question about a vehicle or interested in our consignment
-            program? Reach out — we&apos;d love to hear from you.
+            ¿Tienes alguna pregunta sobre un vehículo o te interesa nuestro
+            programa de consignación? Escríbenos — nos encantaría saber de ti.
           </p>
         </div>
 
@@ -32,17 +32,16 @@ export default function ContactSection() {
               <div className="bg-dark-800 border border-brand/30 rounded-lg p-8 text-center">
                 <div className="text-brand text-4xl mb-4">&#10003;</div>
                 <h3 className="text-xl font-semibold text-white mb-2">
-                  Message Sent!
+                  ¡Mensaje Enviado!
                 </h3>
                 <p className="text-gray-400">
-                  Thanks for reaching out. We&apos;ll get back to you as soon as
-                  possible.
+                  Gracias por contactarnos. Te responderemos lo antes posible.
                 </p>
                 <button
                   onClick={() => setSubmitted(false)}
                   className="mt-4 text-brand hover:text-brand-light text-sm transition-colors"
                 >
-                  Send another message
+                  Enviar otro mensaje
                 </button>
               </div>
             ) : (
@@ -50,13 +49,13 @@ export default function ContactSection() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <input
                     type="text"
-                    placeholder="Name"
+                    placeholder="Nombre"
                     required
                     className="w-full bg-dark-700 border border-dark-600 text-white rounded px-4 py-3 placeholder-gray-500 focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand transition-colors"
                   />
                   <input
                     type="email"
-                    placeholder="Email"
+                    placeholder="Correo electrónico"
                     required
                     className="w-full bg-dark-700 border border-dark-600 text-white rounded px-4 py-3 placeholder-gray-500 focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand transition-colors"
                   />
@@ -64,7 +63,7 @@ export default function ContactSection() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <input
                     type="tel"
-                    placeholder="Phone (optional)"
+                    placeholder="Teléfono (opcional)"
                     className="w-full bg-dark-700 border border-dark-600 text-white rounded px-4 py-3 placeholder-gray-500 focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand transition-colors"
                   />
                   <select
@@ -72,16 +71,16 @@ export default function ContactSection() {
                     className="w-full bg-dark-700 border border-dark-600 text-white rounded px-4 py-3 focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand transition-colors"
                   >
                     <option value="" disabled className="text-gray-500">
-                      Subject
+                      Asunto
                     </option>
-                    <option>General Inquiry</option>
-                    <option>Vehicle Question</option>
-                    <option>Consignment Interest</option>
-                    <option>Other</option>
+                    <option>Consulta General</option>
+                    <option>Pregunta sobre Vehículo</option>
+                    <option>Interés en Consignación</option>
+                    <option>Otro</option>
                   </select>
                 </div>
                 <textarea
-                  placeholder="Your message..."
+                  placeholder="Tu mensaje..."
                   rows={5}
                   required
                   className="w-full bg-dark-700 border border-dark-600 text-white rounded px-4 py-3 placeholder-gray-500 focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand transition-colors resize-none"
@@ -90,7 +89,7 @@ export default function ContactSection() {
                   type="submit"
                   className="w-full bg-brand hover:bg-brand-light text-dark-900 font-semibold py-3.5 rounded transition-colors"
                 >
-                  Send Message
+                  Enviar Mensaje
                 </button>
               </form>
             )}
@@ -99,7 +98,7 @@ export default function ContactSection() {
           {/* Contact info */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-white font-semibold mb-2">Phone</h3>
+              <h3 className="text-white font-semibold mb-2">Teléfono</h3>
               <a
                 href="tel:+15551234567"
                 className="text-gray-400 hover:text-brand transition-colors"
@@ -108,7 +107,7 @@ export default function ContactSection() {
               </a>
             </div>
             <div>
-              <h3 className="text-white font-semibold mb-2">Email</h3>
+              <h3 className="text-white font-semibold mb-2">Correo</h3>
               <a
                 href="mailto:info@berlinprestige.com"
                 className="text-gray-400 hover:text-brand transition-colors"
@@ -117,7 +116,7 @@ export default function ContactSection() {
               </a>
             </div>
             <div>
-              <h3 className="text-white font-semibold mb-2">Location</h3>
+              <h3 className="text-white font-semibold mb-2">Ubicación</h3>
               <p className="text-gray-400">
                 123 Auto Drive<br />
                 Suite 100<br />
@@ -125,11 +124,11 @@ export default function ContactSection() {
               </p>
             </div>
             <div>
-              <h3 className="text-white font-semibold mb-2">Hours</h3>
+              <h3 className="text-white font-semibold mb-2">Horario</h3>
               <div className="text-gray-400 text-sm space-y-1">
-                <p>Monday – Friday: 9:00 AM – 7:00 PM</p>
-                <p>Saturday: 10:00 AM – 5:00 PM</p>
-                <p>Sunday: Closed</p>
+                <p>Lunes – Viernes: 9:00 AM – 7:00 PM</p>
+                <p>Sábado: 10:00 AM – 5:00 PM</p>
+                <p>Domingo: Cerrado</p>
               </div>
             </div>
           </div>

@@ -1,27 +1,27 @@
 const steps = [
   {
     number: "01",
-    title: "Free Evaluation",
+    title: "Evaluación Gratuita",
     description:
-      "Bring your vehicle in for a no-obligation appraisal. We'll assess its condition and market value to set the right price.",
+      "Trae tu vehículo para una tasación sin compromiso. Evaluaremos su condición y valor de mercado para establecer el precio correcto.",
   },
   {
     number: "02",
-    title: "Professional Marketing",
+    title: "Marketing Profesional",
     description:
-      "We photograph, detail, and list your vehicle across multiple platforms to reach the widest pool of buyers.",
+      "Fotografiamos, detallamos y publicamos tu vehículo en múltiples plataformas para alcanzar la mayor cantidad de compradores.",
   },
   {
     number: "03",
-    title: "Hassle-Free Sale",
+    title: "Venta Sin Complicaciones",
     description:
-      "We handle all inquiries, test drives, negotiations, and paperwork. You sit back while we sell your car.",
+      "Nos encargamos de las consultas, pruebas de manejo, negociaciones y papeleo. Tú descansas mientras vendemos tu auto.",
   },
   {
     number: "04",
-    title: "Get Paid",
+    title: "Recibe Tu Pago",
     description:
-      "Once sold, you receive your payment quickly. Transparent pricing with no hidden fees — just a competitive commission.",
+      "Una vez vendido, recibes tu pago rápidamente. Precios transparentes sin cargos ocultos — solo una comisión competitiva.",
   },
 ];
 
@@ -33,20 +33,20 @@ export default function ConsignmentSection() {
           {/* Left - heading & description */}
           <div className="lg:w-1/3 mb-12 lg:mb-0 lg:sticky lg:top-24">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Sell Your Car<br />
-              <span className="text-brand">With Us</span>
+              Vende Tu Auto<br />
+              <span className="text-brand">Con Nosotros</span>
             </h2>
             <div className="w-16 h-1 bg-brand mb-4" />
             <p className="text-gray-400 mb-6">
-              Let us handle the hard work of selling your vehicle. Our
-              consignment program is designed to get you the best price with
-              zero hassle.
+              Déjanos encargarnos del trabajo difícil de vender tu vehículo.
+              Nuestro programa de consignación está diseñado para conseguirte el
+              mejor precio sin complicaciones.
             </p>
             <a
               href="#contact"
               className="inline-block bg-brand hover:bg-brand-light text-dark-900 font-semibold px-6 py-3 rounded transition-colors"
             >
-              Get Started
+              Comenzar
             </a>
           </div>
 

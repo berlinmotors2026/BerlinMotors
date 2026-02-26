@@ -10,9 +10,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Berlin Motors | Quality Cars & Consignment",
+  title: "Berlin Prestige | Venta y Consignación de Autos",
   description:
-    "Browse our curated selection of quality pre-owned vehicles or consign your car with us for a hassle-free selling experience.",
+    "Explora nuestra selección de vehículos seminuevos de calidad o consigna tu auto con nosotros para una experiencia de venta sin complicaciones.",
 };
 
 export default function RootLayout({
@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="es" className="scroll-smooth">
       <body className={`${inter.variable} font-sans antialiased`}>
         <Navbar />
         <main>{children}</main>
