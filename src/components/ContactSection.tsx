@@ -21,7 +21,7 @@ export default function ContactSection() {
           <div className="w-16 h-1 bg-brand mx-auto mb-4" />
           <p className="text-gray-400 max-w-xl mx-auto">
             ¿Tienes alguna pregunta sobre un vehículo o te interesa nuestro
-            programa de consignación? Escríbenos — nos encantaría saber de ti.
+            programa de consignación? Escríbenos — nos encantaría saber de vos.
           </p>
         </div>
 
@@ -100,27 +100,26 @@ export default function ContactSection() {
             <div>
               <h3 className="text-white font-semibold mb-2">Teléfono</h3>
               <a
-                href="tel:+15551234567"
+                href="tel:+5491126160829"
                 className="text-gray-400 hover:text-brand transition-colors"
               >
-                (555) 123-4567
+                +54 9 11 2616-0829
               </a>
             </div>
             <div>
               <h3 className="text-white font-semibold mb-2">Correo</h3>
               <a
-                href="mailto:info@berlinprestige.com"
+                href="mailto:Berlinprestige2026@gmail.com"
                 className="text-gray-400 hover:text-brand transition-colors"
               >
-                info@berlinprestige.com
+                Berlinprestige2026@gmail.com
               </a>
             </div>
             <div>
               <h3 className="text-white font-semibold mb-2">Ubicación</h3>
               <p className="text-gray-400">
-                123 Auto Drive<br />
-                Suite 100<br />
-                Your City, ST 12345
+                Villa del Parque<br />
+                CABA, Argentina
               </p>
             </div>
             <div>

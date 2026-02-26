@@ -42,9 +42,9 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4">Contacto</h4>
             <div className="text-gray-500 text-sm space-y-2">
-              <p>(555) 123-4567</p>
-              <p>info@berlinprestige.com</p>
-              <p>123 Auto Drive, Your City, ST 12345</p>
+              <p>+54 9 11 2616-0829</p>
+              <p>Berlinprestige2026@gmail.com</p>
+              <p>Villa del Parque, CABA, Argentina</p>
             </div>
           </div>
         </div>
