@@ -10,7 +10,7 @@ export const cars: Car[] = [
     price: 31000,
     mileage: 10000,
     exteriorColor: "Negro",
-    transmission: "Automatic",
+    transmission: "Automático",
     drivetrain: "4x2 FWD",
     status: "Available",
     consignment: false,
