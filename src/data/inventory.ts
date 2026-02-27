@@ -11,7 +11,7 @@ export const cars: Car[] = [
     mileage: 10000,
     exteriorColor: "Negro",
     transmission: "Automatic",
-    drivetrain: "FWD",
+    drivetrain: "4x2 FWD",
     status: "Available",
     consignment: false,
     image: "/jeep-2.jpeg",
