@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const quickLinks = [
   { label: "Inicio", href: "#home" },
   { label: "Inventario", href: "#inventory" },
@@ -12,9 +14,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div>
-            <span className="text-xl font-bold text-white tracking-wider">
-              BERLIN <span className="text-brand">PRESTIGE</span>
-            </span>
+            <Image
+              src="/logo.jpeg"
+              alt="Berlin Prestige"
+              width={64}
+              height={64}
+              className="rounded-full"
+            />
             <p className="text-gray-500 text-sm mt-3 max-w-xs">
               Tu socio de confianza para vehículos seminuevos de calidad y
               servicios de consignación sin complicaciones.
