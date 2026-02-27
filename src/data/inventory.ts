@@ -6,7 +6,7 @@ export const cars: Car[] = [
     year: 2025,
     make: "Jeep",
     model: "Compass",
-    trim: "1.30 Serie-S",
+    trim: "1.3 Serie-S",
     price: 31000,
     mileage: 10000,
     exteriorColor: "Negro",
