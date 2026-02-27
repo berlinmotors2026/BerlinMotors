@@ -14,7 +14,7 @@ export const cars: Car[] = [
     drivetrain: "FWD",
     status: "Available",
     consignment: false,
-    image: "/jeep-1.jpeg",
+    image: "/jeep-2.jpeg",
     description: "Serie-S. 10.000 km. Impecable estado.",
   },
 ];
