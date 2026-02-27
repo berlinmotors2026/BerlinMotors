@@ -51,7 +51,7 @@ export default function CarCard({ car }: { car: Car }) {
 
         {/* Specs row */}
         <div className="flex items-center gap-3 mt-3 text-sm text-gray-400">
-          <span>{formatMileage(car.mileage)} mi</span>
+          <span>{formatMileage(car.mileage)} km</span>
           <span className="text-dark-500">&bull;</span>
           <span>{car.transmission}</span>
           <span className="text-dark-500">&bull;</span>
