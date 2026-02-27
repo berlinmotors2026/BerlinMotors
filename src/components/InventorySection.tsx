@@ -20,11 +20,27 @@ export default function InventorySection() {
         </div>
 
         {/* Car grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {available.map((car) => (
-            <CarCard key={car.id} car={car} />
-          ))}
-        </div>
+        {available.length > 0 ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {available.map((car) => (
+              <CarCard key={car.id} car={car} />
+            ))}
+          </div>
+        ) : (
+          <div className="text-center py-16">
+            <p className="text-gray-400 text-lg">
+              Próximamente nuevos vehículos.
+            </p>
+            <a
+              href="https://www.instagram.com/berlinprestige.cars"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-4 text-brand hover:text-brand-light transition-colors"
+            >
+              ¡Seguinos en Instagram para novedades!
+            </a>
+          </div>
+        )}
       </div>
     </section>
   );
