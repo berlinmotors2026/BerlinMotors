@@ -7,7 +7,7 @@ export interface Car {
   price: number;
   mileage: number;
   exteriorColor: string;
-  transmission: "Automatic" | "Manual";
+  transmission: "Automatic" | "Manual" | "Automático";
   drivetrain: string;
   status: "Available" | "Pending" | "Sold";
   consignment: boolean;
